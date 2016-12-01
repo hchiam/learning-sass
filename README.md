@@ -9,6 +9,8 @@ or do something like this in command-line/terminal:
 or do something like this in command-line/terminal, using node:
 `node-sass input.scss output.css`
 
+The .map source map file that's created maps each line in the CSS file to the corresponding line in the Sass file. 
+
 # tutorial:
 http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
 
