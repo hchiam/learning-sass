@@ -1,5 +1,7 @@
 # sassSandbox
-My Sass sandbox. Sass is a stylesheet language interpreted (preprocessed) into CSS.
+My Sass sandbox.
+Sass is a stylesheet language interpreted (preprocessed) into CSS.
+I use the newer syntax called SCSS.
 
 Use http://www.sassmeister.com/
 or do something like this in command-line/terminal:
