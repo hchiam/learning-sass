@@ -14,4 +14,13 @@ http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
 
 # Sass features shown through described code examples:
 http://sass-lang.com/guide
-Preprocessing, variables, nesting, partials, imports, mixins (e.g. prefixes for Firefox and other vendors), extend/inheritance (e.g. classes overwriting properties), operators (for pre-calculating properties)
+
+Preprocessing, 
+variables (so you change properties in only one place), 
+nesting, 
+partials (e.g. to have small separate Sass files for re-use), 
+imports, 
+mixins (like constructor classes.  Can be used for prefixes for Firefox and other vendors), 
+extend/inheritance (e.g. classes overwriting properties),
+and 
+operators (for pre-calculating properties).
