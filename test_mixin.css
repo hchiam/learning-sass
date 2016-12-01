@@ -1,0 +1,9 @@
+.frame:hover {
+  -webkit-transform: rotate(15deg);
+  /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+  -ms-transform: rotate(15deg);
+  /* IE 9 */
+  transform: rotate(15deg);
+  /* IE 10, Fx 16+, Op 12.1+ */ }
+
+/*# sourceMappingURL=test_mixin.css.map */
