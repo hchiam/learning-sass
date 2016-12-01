@@ -21,7 +21,7 @@ The `.sass-cache` cache folder that's created is used to speed up re-compilation
 http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
 
 # Sass features shown through described code examples:
-http://sass-lang.com/guide
+http://sass-lang.com/guide and http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
 
 Preprocessing, 
 variables (so you change properties in only one place), 
@@ -30,5 +30,6 @@ partials (e.g. to have small separate Sass files for re-use),
 imports, 
 mixins (like constructor classes.  Can be used for prefixes for Firefox and other vendors), 
 extend/inheritance (e.g. classes overwriting properties),
-and 
-operators (for pre-calculating properties).
+operators (for pre-calculating properties),
+and
+function (e.g. darken($color, $amount) ).
