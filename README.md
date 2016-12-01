@@ -1,5 +1,8 @@
 # sassSandbox
 My Sass sandbox.
+
+    Sass = "better" CSS.
+
 Sass is a stylesheet language interpreted (preprocessed) into CSS.
 I use the newer syntax called SCSS.
 
