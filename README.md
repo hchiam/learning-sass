@@ -3,6 +3,8 @@ My Sass sandbox.
 Sass is a stylesheet language interpreted (preprocessed) into CSS.
 I use the newer syntax called SCSS.
 
+Some features of SCSS are planned to become standard CSS in the future, but for now pre-processing with SCSS Sass can improve writing CSS files.
+
 Use http://www.sassmeister.com/
 or do something like this in command-line/terminal:
 
