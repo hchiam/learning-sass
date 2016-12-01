@@ -31,4 +31,4 @@ http://sass-lang.com/guide and http://tutorialzine.com/2016/01/learn-sass-in-15-
 * mixins (like constructor classes.  Can be used for prefixes for Firefox and other vendors)
 * extend/inheritance (e.g. classes overwriting properties)
 * operators (for pre-calculating properties)
-* function (e.g. darken($color, $amount) )
+* function (you can make your own or use built-in ones, e.g. darken($color, $amount) )
