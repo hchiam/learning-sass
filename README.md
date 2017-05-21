@@ -1,5 +1,4 @@
-# sassSandbox
-My Sass sandbox.
+# Learning SASS
 
     Sass = "better" CSS.
 
