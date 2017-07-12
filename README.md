@@ -36,3 +36,7 @@ http://sass-lang.com/guide and http://tutorialzine.com/2016/01/learn-sass-in-15-
 * extend/inheritance (e.g. classes overwriting properties)
 * operators (for pre-calculating properties)
 * function (you can make your own or use built-in ones, e.g. darken($color, $amount) )
+
+<br><br>
+
+Just one of the things I'm learning. https://github.com/hchiam/learning
