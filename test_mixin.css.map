@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAQA,YAAa;EALX,iBAAiB,EAFV,aAAa;EAEM,uCAAuC;EAC7D,aAAa,EAHV,aAAa;EAGM,UAAU;EAC5B,SAAS,EAJV,aAAa;EAIM,6BAA6B",
-"sources": ["test_mixin.scss"],
-"names": [],
-"file": "test_mixin.css"
-}
+{"version":3,"sourceRoot":"","sources":["test_mixin.scss"],"names":[],"mappings":"AAQA;EALE,mBAFO;AAEmB;EACtB,eAHG;AAGmB;EAClB,WAJD;AAImB","file":"test_mixin.css"}
