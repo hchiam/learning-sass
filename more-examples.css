@@ -1,0 +1,58 @@
+body {
+  /* this comes from _partial.scss */
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.inverse {
+  /* this uses $primary-color from _partial.scss */
+  background-color: #333;
+  color: white;
+}
+
+/* this uses nested selectors */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 85.7142857143%;
+  text-decoration: none;
+}
+
+.box {
+  /* this uses a mixin */
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  /* this uses @extend */
+}
+
+p, .fancy-text {
+  color: black;
+}
+p a, .fancy-text a {
+  color: lime;
+  text-decoration: underline;
+}
+
+.fancy-text {
+  /* this uses @extend p to copy properties and children of */
+  font-family: avenir, arial, tahoma;
+}
+
+/*# sourceMappingURL=more-examples.css.map */

@@ -1,0 +1,76 @@
+@use 'partial'; // _partial.scss
+
+// useful to print out variables:
+@debug "Hello world!";
+@debug 'partial.$primary-color: #{partial.$primary-color}';
+
+.inverse {
+  /* this uses $primary-color from _partial.scss */
+  background-color: partial.$primary-color;
+  color: white;
+}
+
+/* this uses nested selectors */
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px / 7px * 100%;
+    text-decoration: none;
+  }
+}
+
+// array variable:
+$allowed-properties: (rotate(30deg), rotate(-30dev));
+
+// (mixins are like reusable modules of CSS group)
+@mixin transform($property) {
+  // this if-statement checks if property is in array:
+  @if not index($allowed-properties, $property) {
+    // fail build with error message:
+    @error "Disallowed property used!";
+  }
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box {
+  /* this uses a mixin */
+  @include transform(rotate(30deg));
+}
+
+// this is intended to be extended:
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  /* this uses @extend */
+  @extend %message-shared;
+}
+
+p {
+  color: black;
+  a {
+    color: lime;
+    text-decoration: underline;
+  }
+}
+
+.fancy-text {
+  /* this uses @extend p to copy properties and children of */
+  @extend p;
+  font-family: avenir, arial, tahoma;
+}
