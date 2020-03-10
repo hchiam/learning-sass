@@ -19,13 +19,19 @@ npm install -g sass
 sass input.scss output.css
 ```
 
+You can also have `sass` watch for file changes to signal it to re-compile the CSS output files:
+
+```bash
+sass --watch input.scss output.css
+```
+
 The `.map` source map file that's created maps each line in the CSS file to the corresponding line in the Sass file.
 
 The `.sass-cache` cache folder that's created is used to speed up re-compilation.
 
 ## Tutorial
 
-http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
+<http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/>
 
 ## Sass features shown through described code examples
 
