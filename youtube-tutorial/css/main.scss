@@ -60,7 +60,7 @@ main {
     display: grid; /* CSS grid, so we can use columns, and grid areas */
     grid-template-columns: 50% auto;
     grid-template-areas:
-      "primary card";
+      "primary card"; // will place primary on left of card
   }
   
   section#card {

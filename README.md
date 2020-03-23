@@ -56,3 +56,24 @@ The `.sass-cache` cache folder that's created is used to speed up re-compilation
 (Another recommended VSCode extension: "Live Server". Just hit "Go Live" on the bottom of the window.)
 
 Online CSS clip-path maker: <https://bennettfeely.com/clippy>
+
+### Highlights:
+
+- `@include desktop` SCSS mixin to make media query less verbose.
+- That `@mixin` also uses .
+- SCSS map of `$colors: (...)` to group related variables together.
+- SCSS function to make `map-get` less verbose.
+- (Pure CSS:) CSS grid example that uses `grid-template-areas` and 2 `grid-area`s:
+
+  ```css
+  grid-template-areas:
+      "primary card"; /* will place primary on left of card */
+  ...
+  section#card {
+    grid-area: card;
+  }
+  ...
+  section#primary {
+    grid-area: primary;
+  }
+  ```
