@@ -60,6 +60,29 @@ Online CSS clip-path maker: <https://bennettfeely.com/clippy>
 ### Highlights of [/youtube-tutorial/css/main.scss](https://github.com/hchiam/learning-sass/blob/master/youtube-tutorial/css/main.scss)
 
 - `@include desktop` SCSS mixin to make media query less verbose (less typing for you).
+
+  ```scss
+  @mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }
+
+  ...
+
+  #bg {
+    clip-path: polygon(100% 0, 100% 76%, 45% 100%, 0 100%, 0 0);
+    // other properties
+
+    ...
+
+    @include desktop {
+      // override when wider than $desktop min-width:
+      clip-path: polygon(0 0, 84% 0, 53% 100%, 0% 100%);
+    }
+  }
+  ```
+
 - (Pure CSS:) CSS grid example that uses `grid-template-areas` and 2 `grid-area`s:
 
   ```css
