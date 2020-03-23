@@ -46,3 +46,13 @@ The `.sass-cache` cache folder that's created is used to speed up re-compilation
 * extend/inheritance (e.g. classes overwriting properties)
 * operators (for pre-calculating properties)
 * function (you can make your own or use built-in ones, e.g. darken($color, $amount) )
+
+## YouTube Tutorial I'm Following
+
+<https://www.youtube.com/watch?v=roywYSEPSvc>
+
+(Uses VSCode SCSS extension "Live Sass Compiler" instead of `node`/`gulp`/etc. Just click the "Watch Sass" button on the bottom of the window. It'll auto-generate and auto-update the `.css` and `.css.map` files.)
+
+(Another recommended VSCode extension: "Live Server". Just hit "Go Live" on the bottom of the window.)
+
+Online CSS clip-path maker: <https://bennettfeely.com/clippy>
