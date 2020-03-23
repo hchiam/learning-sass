@@ -57,12 +57,9 @@ The `.sass-cache` cache folder that's created is used to speed up re-compilation
 
 Online CSS clip-path maker: <https://bennettfeely.com/clippy>
 
-### Highlights:
+### Highlights of [/youtube-tutorial/css/main.scss](https://github.com/hchiam/learning-sass/blob/master/youtube-tutorial/css/main.scss)
 
-- `@include desktop` SCSS mixin to make media query less verbose.
-- That `@mixin` also uses .
-- SCSS map of `$colors: (...)` to group related variables together.
-- SCSS function to make `map-get` less verbose.
+- `@include desktop` SCSS mixin to make media query less verbose (less typing for you).
 - (Pure CSS:) CSS grid example that uses `grid-template-areas` and 2 `grid-area`s:
 
   ```css
@@ -77,3 +74,6 @@ Online CSS clip-path maker: <https://bennettfeely.com/clippy>
     grid-area: primary;
   }
   ```
+
+- SCSS map of `$colors: (...)` to group related variables together.
+- SCSS function to make `map-get` less verbose.
