@@ -37,15 +37,15 @@ The `.sass-cache` cache folder that's created is used to speed up re-compilation
 
 <http://sass-lang.com/guide> and <http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/>
 
-* preprocessing
-* variables (so you change properties in only one place)
-* nesting
-* partials (e.g. to have small separate Sass files for re-use)
-* imports
-* mixins (like constructor classes.  Can be used for prefixes for Firefox and other vendors)
-* extend/inheritance (e.g. classes overwriting properties)
-* operators (for pre-calculating properties)
-* function (you can make your own or use built-in ones, e.g. darken($color, $amount) )
+- preprocessing
+- variables (so you change properties in only one place)
+- nesting
+- partials (e.g. to have small separate Sass files for re-use)
+- imports
+- mixins (like constructor classes. Can be used for prefixes for Firefox and other vendors)
+- extend/inheritance (e.g. classes overwriting properties)
+- operators (for pre-calculating properties)
+- function (you can make your own or use built-in ones, e.g. darken($color, $amount) )
 
 ## YouTube Tutorial I'm Following
 
@@ -68,15 +68,11 @@ Online CSS clip-path maker: <https://bennettfeely.com/clippy>
     }
   }
 
-  ...
-
-  #bg {
+  ... #bg {
     clip-path: polygon(100% 0, 100% 76%, 45% 100%, 0 100%, 0 0);
     // other properties
 
-    ...
-
-    @include desktop {
+    ... @include desktop {
       // override when wider than $desktop min-width:
       clip-path: polygon(0 0, 84% 0, 53% 100%, 0% 100%);
     }
@@ -86,14 +82,11 @@ Online CSS clip-path maker: <https://bennettfeely.com/clippy>
 - (Pure CSS:) CSS grid example that uses `grid-template-areas` and 2 `grid-area`s:
 
   ```css
-  grid-template-areas:
-      "primary card"; /* will place primary on left of card */
-  ...
-  section#card {
+  grid-template-areas: "primary card"; /* will place primary on left of card */
+  ... section#card {
     grid-area: card;
   }
-  ...
-  section#primary {
+  ... section#primary {
     grid-area: primary;
   }
   ```
