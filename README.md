@@ -93,3 +93,31 @@ Online CSS clip-path maker: <https://bennettfeely.com/clippy>
 
 - SCSS map of `$colors: (...)` to group related variables together.
 - SCSS function to make `map-get` less verbose.
+
+## Map and loop and breakpoints example
+
+```scss
+$grid-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+@each $grid-breakpoint, $grid-breakpoint-size in $grid-breakpoints {
+  @media (min-width: $grid-breakpoint-size) {
+    .w-#{$grid-breakpoint}-unset {
+      width: unset !important;
+    }
+
+    .text-#{$grid-breakpoint}-wrap {
+      white-space: normal !important;
+    }
+
+    .text-#{$grid-breakpoint}-nowrap {
+      white-space: nowrap !important;
+    }
+  }
+}
+```
