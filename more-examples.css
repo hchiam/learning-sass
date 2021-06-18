@@ -55,4 +55,70 @@ p a, .fancy-text a {
   font-family: avenir, arial, tahoma;
 }
 
+@media (min-width: 576px) {
+  .w-sm-unset {
+    width: unset !important;
+  }
+
+  .text-sm-wrap {
+    white-space: normal !important;
+  }
+
+  .text-sm-nowrap {
+    white-space: nowrap !important;
+  }
+}
+@media (min-width: 768px) {
+  .w-md-unset {
+    width: unset !important;
+  }
+
+  .text-md-wrap {
+    white-space: normal !important;
+  }
+
+  .text-md-nowrap {
+    white-space: nowrap !important;
+  }
+}
+@media (min-width: 992px) {
+  .w-lg-unset {
+    width: unset !important;
+  }
+
+  .text-lg-wrap {
+    white-space: normal !important;
+  }
+
+  .text-lg-nowrap {
+    white-space: nowrap !important;
+  }
+}
+@media (min-width: 1200px) {
+  .w-xl-unset {
+    width: unset !important;
+  }
+
+  .text-xl-wrap {
+    white-space: normal !important;
+  }
+
+  .text-xl-nowrap {
+    white-space: nowrap !important;
+  }
+}
+@media (min-width: 1400px) {
+  .w-xxl-unset {
+    width: unset !important;
+  }
+
+  .text-xxl-wrap {
+    white-space: normal !important;
+  }
+
+  .text-xxl-nowrap {
+    white-space: nowrap !important;
+  }
+}
+
 /*# sourceMappingURL=more-examples.css.map */

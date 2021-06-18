@@ -1,8 +1,10 @@
+@use "sass:math";
+
 @use 'partial'; // _partial.scss
 
 // useful to print out variables:
 @debug "Hello world!";
-@debug 'partial.$primary-color: #{partial.$primary-color}';
+@debug "partial.$primary-color: #{partial.$primary-color}";
 
 .inverse {
   /* this uses $primary-color from _partial.scss */
@@ -24,7 +26,7 @@ nav {
 
   a {
     display: block;
-    padding: 6px / 7px * 100%;
+    padding: math.div(6px, 7px) * 100%;
     text-decoration: none;
   }
 }
@@ -73,4 +75,28 @@ p {
   /* this uses @extend p to copy properties and children of */
   @extend p;
   font-family: avenir, arial, tahoma;
+}
+
+$grid-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+@each $grid-breakpoint, $grid-breakpoint-size in $grid-breakpoints {
+  @media (min-width: $grid-breakpoint-size) {
+    .w-#{$grid-breakpoint}-unset {
+      width: unset !important;
+    }
+
+    .text-#{$grid-breakpoint}-wrap {
+      white-space: normal !important;
+    }
+
+    .text-#{$grid-breakpoint}-nowrap {
+      white-space: nowrap !important;
+    }
+  }
 }
