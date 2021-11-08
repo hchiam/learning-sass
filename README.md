@@ -121,3 +121,12 @@ $grid-breakpoints: (
   }
 }
 ```
+
+## `@import` will eventually be replaced with [`@use`](https://sass-lang.com/documentation/at-rules/use) and [`@forward`](https://sass-lang.com/documentation/at-rules/forward)
+
+Tip from [coder coder](https://youtu.be/dOnYNEXv9BM):
+
+- [`@forward`](https://sass-lang.com/documentation/at-rules/forward) for styles
+- [`@use`](https://sass-lang.com/documentation/at-rules/use) for mixins, variables, etc.
+
+But I might likely just use `@use` since it can do what `@forward` can.
