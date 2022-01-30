@@ -29,6 +29,8 @@ The `.map` source map file that's created maps each line in the CSS file to the 
 
 The `.sass-cache` cache folder that's created is used to speed up re-compilation.
 
+SASS/SCSS is conceptually similar to [Less](https://github.com/hchiam/learning-less).
+
 ## Tutorial
 
 <http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/>
