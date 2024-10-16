@@ -132,3 +132,48 @@ Tip from [coder coder](https://youtu.be/dOnYNEXv9BM):
 - [`@use`](https://sass-lang.com/documentation/at-rules/use) for mixins, variables, etc.
 
 But I might likely just use `@use` since it can do what `@forward` can.
+
+## SCSS looping though CSS variable colour names
+
+```scss
+/** colors.scss */
+
+$colors: (
+  red,
+  green,
+  blue,
+);
+
+$color-count: length($colors);
+
+/** not only SASS variables, but also set up CSS variables ("--..."), which can be accessed by JS: */
+
+@mixin get-css-color-variables {
+  $count: length($colors);
+  --color-count: #{$count};
+  @for $i from 1 through $count {
+    --color-#{$i}: #{nth($colors,$i)};
+  }
+}
+```
+
+So for example:
+
+```scss
+@import 'colors.scss';
+.container {
+  @include get-css-color-variables;
+  // can also use $color-count to use in a @for loop in this file too for other stuff
+}
+```
+
+to generate something like:
+
+```css
+.container {
+  --color-count: 3;
+  --color-1: red;
+  --color-2: green;
+  --color-3: blue;
+}
+```
