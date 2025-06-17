@@ -177,3 +177,23 @@ to generate something like:
   --color-3: blue;
 }
 ```
+
+## unintuitive difference between comment types when using CSS grid template areas in SASS/SCSS
+
+  ```scss
+  /* in SCSS: */
+  grid-template-areas:
+    "top right" // top
+    "mid right" // middle
+    "bot right"; // bottom
+  ```
+
+- Seems to behave differently than
+
+    ```scss
+    /* in SCSS: */
+    grid-template-areas:
+      "top right" /* top */
+      "mid right" /* middle */
+      "bot right"; /* bottom */
+    ```
