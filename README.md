@@ -197,3 +197,20 @@ to generate something like:
       "mid right" /* middle */
       "bot right"; /* bottom */
     ```
+
+## "partial selectors" in variables
+
+You can put "partial selectors" in SCSS variables:
+
+```scss
+$partialSelector: ".some-class";
+.something:has(#{$partialSelector}:nth-child(5)) {
+```
+
+```scss
+$isImageEmpty: ":has(.image-container img[src=''])";
+$isPhoneEmpty: ".contact-container .phone:empty";
+$isEmailEmpty: ".contact-container .email:empty";
+$isContactInfoEmpty: ":has(#{$isPhoneEmpty}):has(#{$isEmailEmpty})":
+&:not(#{$isImageEmpty})#{$isContactInfoEmpty} {
+```
