@@ -215,7 +215,7 @@ $isContactInfoEmpty: ":has(#{$isPhoneEmpty}):has(#{$isEmailEmpty})":
 &:not(#{$isImageEmpty})#{$isContactInfoEmpty} {
 ```
 
-## mixin for writing media queries and container queries at the same time
+## helper mixin for writing media queries and container queries at the same time
 
 could be helpful for things like a page of small previews that need to simulate mobile/table/desktop views:
 
