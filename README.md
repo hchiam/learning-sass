@@ -214,3 +214,30 @@ $isEmailEmpty: ".contact-container .email:empty";
 $isContactInfoEmpty: ":has(#{$isPhoneEmpty}):has(#{$isEmailEmpty})":
 &:not(#{$isImageEmpty})#{$isContactInfoEmpty} {
 ```
+
+## mixin for writing media queries and container queries at the same time
+
+could be helpful for things like a page of small previews that need to simulate mobile/table/desktop views:
+
+```scss
+/**
+example usage:
+.something {
+    @include custom-query("min-width: 62.5rem") {
+        background: red; // this will go into the mixin's @content "placeholders"
+    }
+}
+*/
+@mixin custom-query($condition: /**must be string*/ 'min-width: 1500px', $container-name: custom-query, $container-type: inline-size) {
+    @media screen and ($condition) {
+        @content;
+    }
+
+    container-type: $container-type;
+    container-name: $container-name;
+
+    @container #{$container-name} (#{$condition}) {
+        @content;
+    }
+}
+```
