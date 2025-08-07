@@ -227,6 +227,7 @@ example usage:
         background: red; // this will go into the mixin's @content "placeholders"
     }
 }
+the $condition must be a string, otherwise complex conditions with brackets or functions may not transpile properly for the container query
 */
 @mixin custom-query($condition: /**must be string*/ 'min-width: 1500px', $container-name: custom-query, $container-type: inline-size) {
     @media screen and ($condition) {
