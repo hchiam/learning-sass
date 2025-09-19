@@ -242,3 +242,30 @@ the $condition must be a string, otherwise complex conditions with brackets or f
     }
 }
 ```
+
+## mixin with boolean and if-else
+
+If and else: https://sass-lang.com/documentation/at-rules/control/if/
+
+```scss
+@mixin example($care-about-toggled: true) {
+  @if $care-about-toggled {
+    .container:not(.is-toggled) {
+       display: none;
+    }
+    .container.is-toggled {
+      display: inline-flex;
+    }
+  } @else {
+    .container {
+      display: inline-flex;
+    }
+  }
+}
+
+// both of the following usages seem to work:
+
+@include example(false);
+
+@include example($care-about-toggled: false);
+```
