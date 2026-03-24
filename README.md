@@ -133,6 +133,19 @@ Tip from [coder coder](https://youtu.be/dOnYNEXv9BM):
 
 But I might likely just use `@use` since it can do what `@forward` can.
 
+`@import` is deprecated and messy (e.g. if you have both styles and mixins in the imported file, you could end up with duplicated styles) https://sass-lang.com/documentation/at-rules/import/
+
+`@use` lets you do things like import as or import just a mixin from a file https://sass-lang.com/documentation/at-rules/use/
+
+e.g.:
+
+```scss
+@use "src/corners" as c;
+.button {
+    @include c.rounded;
+}
+```
+
 ## SCSS looping though CSS variable colour names
 
 ```scss
